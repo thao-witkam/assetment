@@ -1,0 +1,9 @@
+{%extends "AssetmentRssfeedBundle:layout:base.html.twig"%}
+
+{%block body %}
+    
+    <h1>LATEST FEED</h1>
+
+    {{ render(controller('AssetmentRssfeedBundle:Default:rssReader')) }}
+
+{%endblock %}

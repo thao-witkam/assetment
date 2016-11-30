@@ -1,0 +1,14 @@
+<div>
+{% for item in items %}
+    <div> {{loop.index}}. <a href="{{item['link']}}" target="_blank">{{item['title']}}</a> <br/>
+        <em>{{item['pubDate']}}</em>
+        <p>
+            {%if item['media'] and item['media']['type']=='image'%}
+                <img src="{{item['media']['url']}}" title="{%if item['media']['media:description']%}{{item['media']['media:description']}} {%endif%}" width="100" style="float:right;" />
+            {%endif%}
+            {{item['description']}} 
+        </p>
+        
+    </div>
+{%endfor%}    
+</div>

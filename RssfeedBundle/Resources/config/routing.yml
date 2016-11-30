@@ -1,0 +1,3 @@
+assetment_rssfeed_homepage:
+    path:     /
+    defaults: { _controller: AssetmentRssfeedBundle:Default:index }
